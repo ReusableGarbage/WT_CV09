@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block nav %}
+<div class="w3-bar w3-black">
+  <a href="{{path('getter')}}" class="w3-bar-item w3-button">Ukazka Getter</a>
+  <a href="#" class="w3-bar-item w3-button">Tady nic neni</a>
+</div>
+{% endblock %}
+{% block body %}
+<div class="w3-green w3-hover-shadow w3-center">
+  <p>Tohle se poslalo twigu. Marka videla ducha a zvolala: <strong>{{zvolani | lower}}</strong></p>
+</div>
+{% endblock %}
